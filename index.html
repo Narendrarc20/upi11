@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       <title>creating Premium sets</title>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+       <style>
+        body{
+            background-color: bisque;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .container{
+            display: flex ;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            gap: 3rem;
+        }
+        .plan{
+
+            flex: 2;
+            max-width: 500px;
+            padding: 10px;
+            background-color: rgb(136, 43, 223);
+            border-radius: 30px;
+            text-align: center;
+        }
+        .title{
+            font-size: 30px;
+            color: brown;
+            font-style: italic;
+            margin-bottom: 20px;
+            font-weight: bold;
+            border-style: inset;
+        }
+        
+        .price{
+            font-size: 25px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .features{
+            padding: 10px;
+            margin: 10px;
+        }
+        .button{
+            color: rgb(203, 105, 36);
+            padding: 5px;
+            background-color: cornflowerblue;
+        }
+        @media (min-width: 100px) and (max-width:1000px) {
+            .container{
+                flex-direction: column;
+                height: 100%;
+            }
+            
+        }
+        @media (min-width:1001px) and (max-width: 2400px) {
+            .container{
+                flex-direction: row;
+            }
+            
+        }
+
+       </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="plan">
+                <div class="title">Basic</div><hr>
+                <div class="price">99/month</div>
+                <ul class="features">
+                    <li>✅ 5GB Storage</li>
+                    <li>✅ 2 Users</li>
+                    <li>✅ only for Mobiles</li>
+                </ul>
+                <button class="button"><a rel="click button" href="./cont.html">Sign Up</a></button>
+                </div>
+                <div class="plan">
+                  <div class="title">Standard</div><hr>
+                  <div class="price">399/month</div>
+                  <ul class="features">
+                    <li>✅ 20GB Storage</li>
+                    <li>✅ 5 Users</li>
+                    <li>✅ Mobiles and laptops</li>
+                  </ul>
+                  <button class="button"><a rel="click button" href="./cont1.html">Sign Up</a></button>
+                </div>
+                <div class="plan">
+                  <div class="title">Premium</div><hr>
+                  <div class="price">599/month</div>
+                  <ul class="features">
+                    <li>✅ 50GB Storage</li> 
+                    <li>✅ 7 Users</li>
+                    <li>✅ Mobiles and laptops</li>                   
+                    </ul>
+                    <button class="button"><a rel="click button" href="./cont2.html">Sign Up</a></button>
+                </div>
+            </div>
+    </body>
+</html>
